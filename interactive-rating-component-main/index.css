@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div{
+    height: 50vh;
+    width: 30vw;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 7%;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 50px;
+}
+
+.icon{
+    background-color: hsl(217, 6%, 26%);
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 20px;
+    height: 20px;
+}
+
+.text1{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+
+}
+
+.text2{
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+
+}
+
+.btn-items{
+    display: flex;
+    justify-content: space-around;
+}
+
+.items{
+    height: 40px;
+    width: 40px;
+    background-color: hsl(217, 6%, 26%);
+    border-radius: 100%;
+    align-items: center;
+    transition: 1s all linear; 
+}
+
+
+.items:hover {
+    background: hsl(25, 97%, 53%);
+}
+
+.items button:hover{
+    color: hsl(0, 0%, 100%);
+}
+
+.item1{
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    color: rgb(175, 171, 171);
+}
+
+.item2{
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    color: hsl(217, 12%, 63%);
+}
+
+.item3{
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    color: hsl(217, 12%, 63%);
+}
+
+.item4{
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    color: hsl(217, 12%, 63%);
+}
+
+.item5{
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    color: hsl(217, 12%, 63%)
+}
+
+.btn{
+    padding: 20px;
+    background:  hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);   
+    border-radius: 40px;
+    border: none;
+    width: 90%;
+    height: 15px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s all linear;
+    font-family: 'Overpass', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.btn:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+a{
+    text-decoration: none;
+}
+
+/* thank-you card styling*/
+
+.main-divs {
+    height: 50vh;
+    width: 30vw;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 7%;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 50px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-thanks {
+    height: 100px;
+    width: 130px;
+}
+
+.selection {
+    color: hsl(25, 97%, 53%);
+    margin-left: 70px;
+    margin-right: 60px;
+    padding-left: 30px;
+    margin-top: 15px;
+    background: hsl(216, 7%, 28%);
+    border-radius: 20px;
+}
+
+.thanks {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.in-touch {
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 30px;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+
+.selected {
+    background-color: hsl(217, 12%, 63%);
+    border-radius: 100%;
+    color: white;
+  }
+  
+  
+
+@media only screen and (max-width: 768px) {
+
+    .main-div{
+        height: 50vh;
+        width: 90vw;
+    }
+
+    .btn{
+        margin-top: 20px;
+    }
+
+    .main-divs {
+        height: 50vh;
+        width: 90vw;
+        margin-right: 20px;
+    }
+
+    .in-touch {
+        margin-left: 10px;
+        margin-right: 0px;
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+
+    .selection {
+        margin-left: 40px;
+        margin-right: 20px;
+        padding-left: 10px;
+        margin-top: 15px;
+        background: hsl(216, 7%, 28%);
+        border-radius: 20px;
+    }
+}

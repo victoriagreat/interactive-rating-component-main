@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Overpass:wght@200;
+                300;400;700&family=Poppins:wght@300;400;500;600&family=Source+Sans+Pro:ital,wght@0,300;
+                0,400;0,600;0,700;1,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <body>
+        <section>
+            <div class="main-divs">
+                <div class="icons">
+                    <img class="image-thanks" src="/images/illustration-thank-you.svg" alt="">
+                </div>
+    
+                <div class="selection">
+                    <p>You selected <span class="rating"></span> out of 5</p>
+                </div>
+
+                <div class="thanks">
+                    <h2>Thank you!</h2>
+                </div>
+
+                <div class="in-touch">
+                    <p>We appreciate you taking your time to give a rating.
+                        If you ever need more support, dont hesitate to get in touch!
+                    </p>
+                </div>
+        </section>
+        <script>
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const ratingValue = urlParams.get('rating');
+            const ratingSpan = document.querySelector('.rating');
+            ratingSpan.innerText = ratingValue;
+        </script>
+</body>
+</html>
